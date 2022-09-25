@@ -8,4 +8,20 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 24px;
+
+  h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  a {
+    font-weight: 700;
+    color: #3577cb;
+    text-decoration: none;
+    &:hover {
+      color: #164a89;
+      cursor: pointer;
+    }
+  }
 }

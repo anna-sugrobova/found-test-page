@@ -1,9 +1,11 @@
 import './index.css';
-import { Header } from './components/Header';
-import { SideBar } from './components/SideBar';
-import { Search } from './components/Search';
-import { InfoBlock } from './components/InfoBlock';
+import { Header } from './components/Header/Header';
+import { SideBar } from './components/SideBar/SideBar';
+import { Search } from './components/Search/Search';
+import { InfoBlock } from './components/InfoBlock/InfoBlock';
 import './App.scss';
+import { PrimaryDomain } from './components/PrimaryDomain/PrimaryDomain';
+import { TableComponent } from './components/Table/Table';
 
 function App() {
   return (
@@ -16,19 +18,9 @@ function App() {
           <Header />
         </header>
         <Search />
+        <p className="domains-subtitle">Custom domains management</p>
         <div className="cards">
-          <InfoBlock>
-            <div className="heading">
-              <p className="subtitle">Primary domain</p>
-              <h2>Amended Taxretum</h2>
-              <a href="amendedtaxreturn.com">amendedtaxreturn.com</a>
-            </div>
-            <div className="properties">
-              <span>Status</span>
-              <p>Submitted</p>
-            </div>
-            <div className="icons"></div>
-          </InfoBlock>
+          <PrimaryDomain />
           <InfoBlock>
             <h2>Custom Domain Settings</h2>
             <p>
@@ -60,6 +52,13 @@ function App() {
             </p>
           </InfoBlock>
         </div>
+        <InfoBlock>
+          <h3>All custom domains</h3>
+          <TableComponent />
+          <div>
+            <h3>View all custom domains</h3>
+          </div>
+        </InfoBlock>
       </div>
     </div>
   );

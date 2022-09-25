@@ -3,7 +3,7 @@ import { ReactComponent as BookQuestionMark } from '../../assets/BookQuestionMar
 import { ReactComponent as VideoClip } from '../../assets/VideoClip.svg';
 import { ReactComponent as UserMenuChevron } from '../../assets/UserMenuChevron.svg';
 
-import './styles.scss';
+import './Header.scss';
 
 function Header() {
   return (
@@ -28,7 +28,9 @@ function Header() {
             <p className="user__info-pro">Power your account</p>
           </div>
         </div>
-        <UserMenuChevron />
+        <div className="chevron">
+          <UserMenuChevron />
+        </div>
       </div>
     </div>
   );

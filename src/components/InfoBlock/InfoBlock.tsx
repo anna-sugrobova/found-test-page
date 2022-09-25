@@ -1,4 +1,4 @@
-import './styles.scss';
+import './InfoBlock.scss';
 import { ReactNode } from 'react';
 
 interface Props {

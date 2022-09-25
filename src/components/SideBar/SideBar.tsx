@@ -1,5 +1,5 @@
 import logo from '../../assets/logo.png';
-import './styles.scss';
+import './SideBar.scss';
 
 function SideBar() {
   return (
