@@ -1,4 +1,4 @@
-import { ReactComponent as Shape } from '../../assets/Shape.svg';
+import { ReactComponent as Filter } from '../../assets/Filter.svg';
 import { ReactComponent as CheckboxChecked } from '../../assets/CheckboxChecked.svg';
 import { ReactComponent as Checkbox } from '../../assets/Checkbox.svg';
 import { ReactComponent as Chevron } from '../../assets/Chevron.svg';
@@ -7,7 +7,6 @@ import './DomainsTable.scss';
 function DomainsTable() {
   return (
     <table className="tableStyles">
-      <caption className="title">All custom domains</caption>
       <thead className="tableHeaderStyles">
         <tr>
           <th>Name</th>
@@ -15,7 +14,7 @@ function DomainsTable() {
           <th>Status</th>
           <th>
             <span className="primaryHeaderName">Primary</span>
-            <Shape />
+            <Filter />
           </th>
           <th>Created on</th>
           <th>Actions</th>
@@ -30,9 +29,9 @@ function DomainsTable() {
             <CheckboxChecked />
           </td>
           <td>12/06/2019</td>
-          <td>
+          <td className="actionsColumn">
             Actions
-            <Chevron />
+            <Chevron className="chevronIcon" />
           </td>
         </tr>
         <tr>
@@ -43,9 +42,9 @@ function DomainsTable() {
             <Checkbox />
           </td>
           <td>12/06/2019</td>
-          <td>
+          <td className="actionsColumn">
             Actions
-            <Chevron />
+            <Chevron className="chevronIcon" />
           </td>
         </tr>
         <tr>
@@ -56,9 +55,9 @@ function DomainsTable() {
             <Checkbox />
           </td>
           <td>12/06/2019</td>
-          <td>
+          <td className="actionsColumn">
             Actions
-            <Chevron />
+            <Chevron className="chevronIcon" />
           </td>
         </tr>
         <tr>
@@ -69,9 +68,9 @@ function DomainsTable() {
             <Checkbox />
           </td>
           <td>12/06/2019</td>
-          <td>
+          <td className="actionsColumn">
             Actions
-            <Chevron />
+            <Chevron className="chevronIcon" />
           </td>
         </tr>
         <tr>
@@ -82,9 +81,9 @@ function DomainsTable() {
             <Checkbox />
           </td>
           <td>12/06/2019</td>
-          <td>
+          <td className="actionsColumn">
             Actions
-            <Chevron />
+            <Chevron className="chevronIcon" />
           </td>
         </tr>
       </tbody>

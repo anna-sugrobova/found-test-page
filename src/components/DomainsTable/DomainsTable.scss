@@ -1,6 +1,6 @@
 .tableStyles {
   width: 1040px;
-  height: 207px;
+  // height: 207px;
   text-align: left;
 }
 
@@ -14,9 +14,15 @@
 
 .tableHeaderStyles {
   font-size: 12px;
+  margin-bottom: 16px;
+  color: #808080;
 }
 
-.title {
-  font-size: 16px;
-  text-align: left;
+.actionsColumn {
+  color: #3577cb;
+  font-weight: 700;
+}
+
+.chevronIcon {
+  margin-left: 10px;
 }

@@ -1,0 +1,43 @@
+.viewDomains {
+  font-size: 14px;
+  font-weight: 700;
+  color: #3577cb;
+}
+
+.createDomainBtn {
+  background: #d84a7e;
+  border-radius: 50px;
+  width: 233px;
+  height: 32px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  border: none;
+  text-transform: uppercase;
+  font-family: 'Nunito';
+  padding: 0px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: absolute;
+  left: 783px;
+  top: 20px;
+}
+
+.addCircleIcon {
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.domainsBlockHeader {
+  display: flex;
+  position: relative;
+}

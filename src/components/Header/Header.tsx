@@ -1,7 +1,7 @@
 import { ReactComponent as PersonLogo } from '../../assets/Person.svg';
 import { ReactComponent as BookQuestionMark } from '../../assets/BookQuestionMark.svg';
 import { ReactComponent as VideoClip } from '../../assets/VideoClip.svg';
-import { ReactComponent as UserMenuChevron } from '../../assets/UserMenuChevron.svg';
+import { ReactComponent as Chevron } from '../../assets/Chevron.svg';
 
 import './Header.scss';
 
@@ -29,7 +29,7 @@ function Header() {
           </div>
         </div>
         <div className="chevron">
-          <UserMenuChevron />
+          <Chevron />
         </div>
       </div>
     </div>
