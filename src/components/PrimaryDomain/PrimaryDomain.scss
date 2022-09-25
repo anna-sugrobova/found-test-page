@@ -1,0 +1,47 @@
+.primary-domain {
+  //width: 336px;
+  .info {
+    justify-content: space-between;
+    flex-direction: column;
+
+    .heading {
+      white-space: nowrap;
+    }
+
+    .subtitle {
+      font-weight: 600;
+      color: #808080;
+    }
+
+    .icons {
+      display: flex;
+      align-items: flex-start;
+      padding: 0;
+      gap: 8px;
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 32px;
+        height: 32px;
+        background: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 50px;
+        cursor: pointer;
+        &:hover {
+          background-color: #f2f7fa;
+        }
+      }
+    }
+  }
+}
+
+.status-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #808080;
+}
