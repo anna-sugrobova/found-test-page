@@ -5,11 +5,11 @@ import { ReactComponent as UserMenuChevron } from '../../assets/UserMenuChevron.
 
 import './styles.scss';
 
-function Header({}) {
+function Header() {
   return (
-    <div className="container">
+    <div className="header">
       <div className="header__title">
-        <p className="title">Custom domains</p>
+        <h1 className="title">Custom domains</h1>
       </div>
       <div className="header__info">
         <div className="video">

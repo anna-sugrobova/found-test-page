@@ -1,0 +1,45 @@
+.mainBlock {
+  margin-left: 256px;
+}
+
+.cards {
+  display: flex;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  .info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+
+    .subtitle {
+      font-weight: 600;
+      color: #808080;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 27px;
+    }
+
+    a {
+      font-weight: 700;
+      color: #3577cb;
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 15px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #808080;
+    }
+
+    &:first-child {
+      justify-content: space-between;
+    }
+  }
+}
