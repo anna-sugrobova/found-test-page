@@ -21,12 +21,12 @@ function DomainsTable() {
         </tr>
       </thead>
       <tbody className="mainTableContent">
-        <tr>
+        <tr className="firstColumn">
           <td>Amended Taxretum</td>
           <td>www.amendedtaxreturn.com</td>
           <td>Submitted</td>
           <td>
-            <CheckboxChecked />
+            <CheckboxChecked className="checkboxChecked" />
           </td>
           <td>12/06/2019</td>
           <td className="actionsColumn">
@@ -39,7 +39,7 @@ function DomainsTable() {
           <td>www.thischange.com</td>
           <td>Failed confirmation</td>
           <td>
-            <Checkbox />
+            <Checkbox className="checkbox" />
           </td>
           <td>12/06/2019</td>
           <td className="actionsColumn">
@@ -52,7 +52,7 @@ function DomainsTable() {
           <td>lnk.notarealdomain.com</td>
           <td>Failed confirmation</td>
           <td>
-            <Checkbox />
+            <Checkbox className="checkbox" />
           </td>
           <td>12/06/2019</td>
           <td className="actionsColumn">
@@ -65,7 +65,7 @@ function DomainsTable() {
           <td>link.ft2.sod</td>
           <td>Failed confirmation</td>
           <td>
-            <Checkbox />
+            <Checkbox className="checkbox" />
           </td>
           <td>12/06/2019</td>
           <td className="actionsColumn">
@@ -78,7 +78,7 @@ function DomainsTable() {
           <td>www.amendedtaxreturn.com</td>
           <td>Failed confirmation</td>
           <td>
-            <Checkbox />
+            <Checkbox className="checkbox" />
           </td>
           <td>12/06/2019</td>
           <td className="actionsColumn">

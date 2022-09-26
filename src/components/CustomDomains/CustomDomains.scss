@@ -2,42 +2,69 @@
   font-size: 14px;
   font-weight: 700;
   color: #3577cb;
+  cursor: pointer;
 }
 
 .createDomainBtn {
-  background: #d84a7e;
-  border-radius: 50px;
   width: 233px;
   height: 32px;
-  color: #ffffff;
+  padding: 0px 16px;
+  background: #d84a7e;
+  border-radius: 50px;
+  font-family: 'Nunito';
   font-size: 12px;
   font-weight: 700;
+  line-height: 16px;
   letter-spacing: 0.1em;
-  border: none;
   text-transform: uppercase;
-  font-family: 'Nunito';
-  padding: 0px 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  position: absolute;
-  left: 783px;
-  top: 20px;
+  color: #ffffff;
+  margin: 0;
+
+  &:hover {
+    background-color: #e7286e;
+    color: #ffffff;
+  }
 }
 
-.addCircleIcon {
-  margin-right: 10px;
-}
-
-.title {
+.allDomainsTitle {
   font-size: 16px;
   font-weight: 600;
   text-align: left;
-  margin-bottom: 30px;
 }
 
 .domainsBlockHeader {
   display: flex;
-  position: relative;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+li {
+  display: inline;
+  color: #3577cb;
+  margin-right: 4px;
+}
+
+.domainsBottomBlockContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.domainNumbersList {
+  display: flex;
+  cursor: pointer;
+}
+
+.leftChevronSvg {
+  margin-right: 20px;
+}
+
+.rightChevronSvg {
+  transform: rotate(180deg);
+  margin-left: 20px;
+}
+
+.twoChevronsSvg {
+  transform: rotate(180deg);
 }

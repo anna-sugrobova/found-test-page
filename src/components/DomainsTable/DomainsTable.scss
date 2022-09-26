@@ -1,7 +1,8 @@
 .tableStyles {
-  width: 1040px;
-  // height: 207px;
+  width: 100%;
   text-align: left;
+  // border-spacing: 22.5px 20px;
+  // border-collapse: separate;
 }
 
 .primaryHeaderName {
@@ -10,19 +11,37 @@
 
 .mainTableContent {
   font-size: 14px;
+
+  tr {
+    td {
+      padding: 6.3px 0px;
+    }
+  }
 }
 
 .tableHeaderStyles {
   font-size: 12px;
-  margin-bottom: 16px;
   color: #808080;
+  & tr th {
+    &:last-child {
+      text-align: right;
+    }
+  }
 }
 
 .actionsColumn {
   color: #3577cb;
   font-weight: 700;
+  cursor: pointer;
+  text-align: right;
 }
 
 .chevronIcon {
   margin-left: 10px;
+  fill: #3577cb;
 }
+
+// .checkboxChecked,
+// .checkbox {
+//   margin-bottom: 15px;
+// }
