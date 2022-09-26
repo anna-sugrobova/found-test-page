@@ -49,6 +49,10 @@
 
   .drawer-container {
     width: 100%;
+
+    &.bottom {
+      margin-top: auto;
+    }
   }
 
   .MuiDrawer-root {

@@ -14,6 +14,10 @@ import { ReactComponent as DesktopKeyboard } from '../../assets/DesktopKeyboard.
 import { ReactComponent as DesktopFlow } from '../../assets/DesktopFlow.svg';
 import { ReactComponent as MyLocation } from '../../assets/MyLocation.svg';
 import { ReactComponent as GlobePerson } from '../../assets/GlobePerson.svg';
+import { ReactComponent as Settings } from '../../assets/Settings.svg';
+import { ReactComponent as Permissions } from '../../assets/Permissions.svg';
+import { ReactComponent as Help } from '../../assets/Help.svg';
+import { ReactComponent as Logout } from '../../assets/Logout.svg';
 
 import List from '@mui/material/List';
 import { Link } from 'react-router-dom';
@@ -108,6 +112,31 @@ function SideBar() {
     ],
   };
 
+  const serviceMenuItems = {
+    data: [
+      {
+        name: 'Account settings',
+        url: '/account-settings',
+        icon: <Settings />,
+      },
+      {
+        name: 'Permissions',
+        url: '/permissions',
+        icon: <Permissions />,
+      },
+      {
+        name: 'Help',
+        url: '/help',
+        icon: <Help />,
+      },
+      {
+        name: 'Logout',
+        url: '/logout',
+        icon: <Logout />,
+      },
+    ],
+  };
+
   const handler = (children) => {
     return children.map((subOption) => {
       if (!subOption.children) {
@@ -165,6 +194,14 @@ function SideBar() {
         <Drawer variant="persistent" open hideBackdrop>
           <div>
             <List>{handler(menuItems.data)}</List>
+          </div>
+        </Drawer>
+      </div>
+
+      <div className="drawer-container bottom">
+        <Drawer variant="persistent" open hideBackdrop>
+          <div>
+            <List>{handler(serviceMenuItems.data)}</List>
           </div>
         </Drawer>
       </div>
