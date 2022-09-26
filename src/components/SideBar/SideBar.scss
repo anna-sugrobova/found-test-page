@@ -6,5 +6,142 @@
   top: 0;
   left: 0;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 24px;
+  gap: 32px;
+  box-sizing: border-box;
+
+  .logo {
+    width: 141.14px;
+    height: 24px;
+    margin-bottom: 2px;
+  }
+
+  .launch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    padding: 0 24px 0 32px;
+    background: #d84a7e;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    width: 208px;
+    height: 56px;
+    color: #ffffff;
+    justify-content: center;
+    min-height: 56px;
+
+    svg {
+      fill: white;
+    }
+
+    &:hover {
+      background-color: #e7286e;
+    }
+  }
+
+  .drawer-container {
+    width: 100%;
+  }
+
+  .MuiDrawer-root {
+    width: 100%;
+  }
+
+  .MuiPaper-root {
+    position: relative;
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-family: 'Nunito', serif;
+    font-style: normal;
+
+    .MuiList-root {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+      gap: 20px;
+      width: 100%;
+
+      div {
+        width: 100%;
+      }
+
+      .MuiButtonBase-root {
+        padding: 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        color: #000000;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        &.primary,
+        &.bold {
+          .MuiTypography-root {
+            font-weight: 700;
+          }
+        }
+
+        &:hover {
+          background-color: unset;
+
+          .MuiTypography-root {
+            color: #3577cb;
+          }
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        .MuiListItemText-root {
+          padding: 0;
+          flex-grow: 1 !important;
+          flex-shrink: unset;
+          flex-basis: unset;
+          margin: 0;
+        }
+
+        .MuiTypography-root {
+          font-family: 'Nunito', serif;
+          text-decoration: none;
+          color: #000000;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+          transition: 0.3s;
+        }
+      }
+    }
+
+    .MuiCollapse-wrapperInner {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 0 8px 32px;
+      gap: 12px;
+      margin-top: 21px;
+    }
+
+    .chevron {
+      fill: #000000;
+      width: 8px;
+      height: 4.75px;
+
+      &.down {
+        transform: rotateX(180deg);
+      }
+    }
+  }
 }
