@@ -2,7 +2,6 @@
   display: flex;
   padding-top: 24.5px;
   padding-bottom: 20px;
-  padding-right: 32px;
   justify-content: space-between;
 
   .header {
@@ -36,6 +35,7 @@
 
         &:hover {
           color: #3161a4;
+
           svg {
             fill: #3161a4;
           }
@@ -62,12 +62,14 @@
           &-pro {
             color: #d84a7e;
             cursor: pointer;
+
             &:hover {
               color: #e7286e;
             }
           }
         }
       }
+
       .chevron {
         cursor: pointer;
         width: 32px;
@@ -81,8 +83,16 @@
         border: 1px solid #e0e0e0;
         border-radius: 30px;
 
+        svg {
+          fill: #3577cb;
+        }
+
         &:hover {
           background-color: #f2f2f5;
+
+          svg {
+            fill: #164a89;
+          }
         }
       }
     }
