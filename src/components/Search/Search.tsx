@@ -1,5 +1,6 @@
 import './Search.scss';
-import { useState, KeyboardEvent } from 'react';
+import { KeyboardEvent, useState } from 'react';
+import { ReactComponent as Chevron } from '../../assets/Chevron.svg';
 
 function Search({}) {
   const [isOptionsOpen, setIsOptionsOpen] = useState(false);
@@ -56,40 +57,45 @@ function Search({}) {
 
   return (
     <div className="search">
-      <span>Date</span>
+      <div className="input">
+        <button
+          type="button"
+          aria-haspopup="listbox"
+          aria-expanded={isOptionsOpen}
+          className={isOptionsOpen ? 'expanded' : ''}
+          onClick={toggleOptions}
+          onKeyDown={handleListKeyDown}
+        >
+          {optionsList[selectedOption]}
+          <Chevron />
+        </button>
+        <ul
+          className={`options ${isOptionsOpen ? 'show' : ''}`}
+          role="listbox"
+          aria-activedescendant={optionsList[selectedOption]}
+          tabIndex={-1}
+          onKeyDown={handleListKeyDown}
+        >
+          {optionsList.map((option, index) => (
+            <li
+              id={option}
+              role="option"
+              aria-selected={selectedOption === index}
+              tabIndex={0}
+              onKeyDown={handleKeyDown(index)}
+              onClick={() => {
+                setSelectedThenCloseDropdown(index);
+              }}
+            >
+              {option}
+            </li>
+          ))}
+        </ul>
+        <p className="divider">....</p>
+        <input placeholder="Start typing to search and filter your custom domains" />
+      </div>
 
-      <button
-        type="button"
-        aria-haspopup="listbox"
-        aria-expanded={isOptionsOpen}
-        className={isOptionsOpen ? 'expanded' : ''}
-        onClick={toggleOptions}
-        onKeyDown={handleListKeyDown}
-      >
-        {optionsList[selectedOption]}
-      </button>
-      <ul
-        className={`options ${isOptionsOpen ? 'show' : ''}`}
-        role="listbox"
-        aria-activedescendant={optionsList[selectedOption]}
-        tabIndex={-1}
-        onKeyDown={handleListKeyDown}
-      >
-        {optionsList.map((option, index) => (
-          <li
-            id={option}
-            role="option"
-            aria-selected={selectedOption === index}
-            tabIndex={0}
-            onKeyDown={handleKeyDown(index)}
-            onClick={() => {
-              setSelectedThenCloseDropdown(index);
-            }}
-          >
-            {option}
-          </li>
-        ))}
-      </ul>
+      <button className="search">Search</button>
     </div>
   );
 }
