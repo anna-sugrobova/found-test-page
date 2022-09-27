@@ -2,9 +2,12 @@
   margin-left: 256px;
   padding-right: 32px;
   padding-left: 33px;
+  @media (max-width: 1024px) {
+    padding-left: 0;
+  }
 }
 
-.domains-subtitle {
+.domainsSubtitle {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
@@ -18,10 +21,18 @@
   gap: 16px;
   margin-bottom: 16px;
 
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+
   .info {
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     color: #000000;
   }
+}
+
+.customDomainsContainer {
+  margin-bottom: 32px;
 }

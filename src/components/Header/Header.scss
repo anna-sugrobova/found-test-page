@@ -1,95 +1,98 @@
 .header {
   display: flex;
-  padding-top: 24.5px;
-  padding-bottom: 20px;
+  padding-top: 23.5px;
+  padding-bottom: 19px;
   justify-content: space-between;
 
-  .header {
-    &__info {
-      display: flex;
+  .headerInfo {
+    display: flex;
 
-      .video,
-      .intro {
+    .video,
+    .intro {
+      display: flex;
+      color: #3577cb;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 19px;
+      align-items: center;
+      cursor: pointer;
+
+      &:first-child {
+        margin-right: 38px;
+      }
+
+      svg {
+        fill: #3577cb;
+      }
+
+      span {
+        margin-left: 14px;
+      }
+
+      &:hover {
+        color: #3161a4;
+
+        svg {
+          fill: #3161a4;
+        }
+      }
+    }
+
+    .user {
+      display: flex;
+      margin-left: 47px;
+      margin-right: 82px;
+
+      @media (max-width: 1024px) {
+        margin-right: 0;
+        margin-left: 10px;
+      }
+
+      svg {
+        align-self: center;
+      }
+
+      .userInfo {
+        margin-left: 12px;
         display: flex;
-        color: #3577cb;
+        flex-direction: column;
         font-weight: 700;
         font-size: 14px;
         line-height: 19px;
-        align-items: center;
-        cursor: pointer;
 
-        &:first-child {
-          margin-right: 38px;
-        }
+        .userInfoPro {
+          color: #d84a7e;
+          cursor: pointer;
 
-        svg {
-          fill: #3577cb;
-        }
-
-        span {
-          margin-left: 14px;
-        }
-
-        &:hover {
-          color: #3161a4;
-
-          svg {
-            fill: #3161a4;
+          &:hover {
+            color: #e7286e;
           }
         }
       }
+    }
 
-      .user {
-        display: flex;
-        margin-left: 47px;
-        margin-right: 82px;
+    .chevron {
+      cursor: pointer;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      background: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 30px;
 
-        svg {
-          align-self: center;
-        }
-
-        &__info {
-          margin-left: 12px;
-          display: flex;
-          flex-direction: column;
-          font-weight: 700;
-          font-size: 14px;
-          line-height: 19px;
-
-          &-pro {
-            color: #d84a7e;
-            cursor: pointer;
-
-            &:hover {
-              color: #e7286e;
-            }
-          }
-        }
+      svg {
+        fill: #3577cb;
       }
 
-      .chevron {
-        cursor: pointer;
-        width: 32px;
-        height: 32px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        background: #ffffff;
-        border: 1px solid #e0e0e0;
-        border-radius: 30px;
+      &:hover {
+        background-color: #f2f2f5;
 
         svg {
-          fill: #3577cb;
-        }
-
-        &:hover {
-          background-color: #f2f2f5;
-
-          svg {
-            fill: #164a89;
-          }
+          fill: #164a89;
         }
       }
     }

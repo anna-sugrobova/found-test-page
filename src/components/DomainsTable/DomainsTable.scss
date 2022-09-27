@@ -1,7 +1,7 @@
 .domainsTable {
   width: 100%;
   text-align: left;
-  margin-bottom: 29px;
+  margin-bottom: 26.7px;
 }
 
 .primaryHeaderName {
@@ -15,29 +15,46 @@
     &:nth-child(1) {
       td {
         padding: 18.3px 0 0 0;
+        svg {
+          top: 14px;
+        }
       }
     }
     &:nth-child(2) {
       td {
         padding: 26.1px 0 0 0;
+        svg {
+          top: 19.1px;
+        }
       }
     }
     &:nth-child(3) {
       td {
         padding: 25.1px 0 0 0;
+        svg {
+          top: 19.3px;
+        }
       }
     }
     &:nth-child(4) {
       td {
         padding: 24.3px 0 0 0;
+        svg {
+          top: 19.3px;
+        }
       }
     }
     &:nth-child(5) {
       td {
         padding: 25.3px 0 0 0;
+        svg {
+          top: 19.3px;
+        }
       }
     }
     td {
+      position: relative;
+
       &:nth-child(1) {
         width: 16.4%;
       }
@@ -49,9 +66,12 @@
       }
       &:nth-child(4) {
         width: 12.8%;
+        // svg {
+        //   position: absolute;
+        //   top: 13px;
+        // }
         svg {
           position: absolute;
-          top: 13px;
         }
       }
       &:nth-child(5) {
@@ -83,5 +103,6 @@
 
 .chevronIcon {
   margin-left: 10px;
+  margin-bottom: 1.4px;
   fill: #3577cb;
 }

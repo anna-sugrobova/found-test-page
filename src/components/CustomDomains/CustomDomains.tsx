@@ -23,11 +23,11 @@ function CustomDomains() {
             <TwoChevrons />
             <ChevronInContainer className="leftChevron" />
             <ul className="pagesList">
-              <li className="listItem">1</li>
-              <li className="listItem">2</li>
-              <li className="listItem">3</li>
-              <li className="listItem">4</li>
-              <li className="listItem">5</li>
+              <li className="listItem first">1</li>
+              <li className="listItem second">2</li>
+              <li className="listItem third">3</li>
+              <li className="listItem fourth">4</li>
+              <li className="listItem fifth">5</li>
             </ul>
             <ChevronInContainer className="rightChevron" />
             <TwoChevrons className="rightChevrons" />

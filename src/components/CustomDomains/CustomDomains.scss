@@ -42,6 +42,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
 
     .viewDomains {
       font-size: 14px;
@@ -53,29 +54,58 @@
     .pages,
     .pagesList {
       display: flex;
+      align-items: center;
       cursor: pointer;
+      // margin-right: 3px;
 
       .leftChevron {
-        margin-right: 20px;
+        margin-right: 22px;
+        margin-left: 4px;
       }
 
       .listItem {
         display: inline;
         color: #3577cb;
-        margin-right: 4px;
+        //margin-right: 4px;
+        margin-left: 0 !important;
         font-weight: 700;
         font-size: 14px;
         line-height: 19px;
+
+        &.first {
+          margin-right: 3px;
+        }
+
+        &.second {
+          margin-right: 3px;
+        }
+
+        &.third {
+          margin-right: 2px;
+        }
+
+        &.fourth {
+          margin-right: 3px;
+        }
+
+        &.fifth {
+          margin-right: 1px;
+        }
       }
 
       .rightChevron {
         transform: rotate(180deg);
         margin-left: 20px;
+        margin-right: 4px;
       }
 
       .rightChevrons {
         transform: rotate(180deg);
       }
+    }
+
+    .pagesList {
+      gap: 13px;
     }
   }
 }
