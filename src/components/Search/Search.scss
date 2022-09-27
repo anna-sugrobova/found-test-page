@@ -39,6 +39,10 @@ button {
       fill: #164a89;
     }
   }
+
+  @media (max-width: 480px) {
+    margin-right: 0;
+  }
 }
 
 button:hover {
@@ -95,6 +99,14 @@ ul.options li[aria-selected='true'] {
   gap: 10px;
   flex-grow: 1;
   position: relative;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    gap: 5px;
+  }
 }
 
 input {

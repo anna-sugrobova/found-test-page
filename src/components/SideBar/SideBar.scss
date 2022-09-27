@@ -47,16 +47,13 @@
     }
   }
 
-  .drawerContainer {
+  .drawerContainer,
+  .MuiDrawer-root {
     width: 100%;
   }
 
   .drawerContainerBottom {
     margin-top: auto;
-  }
-
-  .MuiDrawer-root {
-    width: 100%;
   }
 
   .MuiPaper-root {
@@ -157,6 +154,16 @@
       &.down {
         transform: rotateX(180deg);
         margin-top: 1px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    gap: 16px;
+    padding: 15px;
+    .MuiPaper-root {
+      .MuiList-root {
+        gap: 15px;
       }
     }
   }

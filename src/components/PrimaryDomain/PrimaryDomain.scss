@@ -40,6 +40,21 @@
       }
     }
   }
+
+  @media (max-width: 768px) {
+    .info {
+      align-items: center;
+      gap: 30px;
+
+      .heading {
+        text-align: center;
+      }
+
+      .properties {
+        text-align: center;
+      }
+    }
+  }
 }
 
 .statusTitle {

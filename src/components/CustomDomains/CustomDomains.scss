@@ -1,3 +1,7 @@
+.domainsTableContainer {
+  overflow-x: auto;
+}
+
 .customDomains {
   width: 100%;
   gap: 17px;
@@ -12,6 +16,16 @@
       font-size: 16px;
       font-weight: 600;
       text-align: left;
+    }
+
+    @media (max-width: 480px) {
+      flex-direction: column;
+      margin-bottom: 20px;
+      align-items: center;
+      .headerTitle {
+        margin-bottom: 15px;
+        text-align: center;
+      }
     }
   }
 
@@ -44,11 +58,24 @@
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: 480px) {
+      flex-direction: column;
+      margin-top: 10px;
+      .viewDomains {
+        margin-bottom: 10px;
+      }
+    }
+
     .viewDomains {
       font-size: 14px;
       font-weight: 700;
       color: #3577cb;
       cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        color: #3161a4;
+      }
     }
 
     .pages,
@@ -56,7 +83,6 @@
       display: flex;
       align-items: center;
       cursor: pointer;
-      // margin-right: 3px;
 
       .leftChevron {
         margin-right: 22px;
@@ -66,26 +92,24 @@
       .listItem {
         display: inline;
         color: #3577cb;
-        //margin-right: 4px;
         margin-left: 0 !important;
         font-weight: 700;
         font-size: 14px;
         line-height: 19px;
+        transition: 0.3s;
 
-        &.first {
-          margin-right: 3px;
+        &:hover {
+          color: #3161a4;
         }
 
-        &.second {
+        &.first,
+        &.second,
+        &.fourth {
           margin-right: 3px;
         }
 
         &.third {
           margin-right: 2px;
-        }
-
-        &.fourth {
-          margin-right: 3px;
         }
 
         &.fifth {

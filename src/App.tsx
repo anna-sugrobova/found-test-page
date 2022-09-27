@@ -6,13 +6,22 @@ import { CustomDomains } from './components/CustomDomains/CustomDomains';
 import { UserManual } from './components/UserManual/UserManual';
 import './App.scss';
 import './index.css';
+import { slide as Menu } from 'react-burger-menu';
 
 function App() {
   return (
     <div className="App">
       <nav>
-        <SideBar />
+        <div className="appSideBar">
+          <SideBar />
+        </div>
       </nav>
+      <div className="burger">
+        <Menu width={'256px'}>
+          <SideBar />
+        </Menu>
+      </div>
+
       <div className="mainBlock">
         <header>
           <Header />
