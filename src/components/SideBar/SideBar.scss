@@ -49,10 +49,10 @@
 
   .drawerContainer {
     width: 100%;
+  }
 
-    .drawerContainerBottom {
-      margin-top: auto;
-    }
+  .drawerContainerBottom {
+    margin-top: auto;
   }
 
   .MuiDrawer-root {
@@ -162,9 +162,12 @@
   }
 }
 
-.dashboardIcon,
-.megaphoneIcon {
+.dashboardIcon {
   margin-left: 3px;
+}
+
+.megaphoneIcon {
+  width: 21px;
 }
 
 .databaseArrowUpIcon {

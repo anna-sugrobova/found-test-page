@@ -8,10 +8,10 @@ import './Header.scss';
 function Header() {
   return (
     <div className="header">
-      <div className="header__title">
+      <div className="mainHeaderTitle">
         <h1 className="title">Custom domains</h1>
       </div>
-      <div className="header__info">
+      <div className="headerInfo">
         <div className="video">
           <VideoClip />
           <span>Introduction video</span>
@@ -23,9 +23,9 @@ function Header() {
 
         <div className="user">
           <PersonLogo />
-          <div className="user__info">
-            <p className="user__info-name">Sid Barrett</p>
-            <p className="user__info-pro">Power your account</p>
+          <div className="userInfo">
+            <p className="userInfoName">Sid Barrett</p>
+            <p className="userInfoPro">Power your account</p>
           </div>
         </div>
         <div className="chevron">

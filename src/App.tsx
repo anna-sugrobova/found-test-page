@@ -19,12 +19,14 @@ function App() {
         </header>
         <Search />
         <main>
-          <h2 className="domains-subtitle">Custom domains management</h2>
+          <h2 className="domainsSubtitle">Custom domains management</h2>
           <div className="cards">
             <PrimaryDomain />
             <UserManual />
           </div>
-          <CustomDomains />
+          <div className="customDomainsContainer">
+            <CustomDomains />
+          </div>
         </main>
       </div>
     </div>
