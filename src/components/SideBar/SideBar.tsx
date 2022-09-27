@@ -1,4 +1,3 @@
-//@ts-nocheck
 import logo from '../../assets/logo.png';
 import './SideBar.scss';
 import { useState } from 'react';
@@ -27,13 +26,24 @@ import Collapse from '@mui/material/Collapse';
 import Drawer from '@mui/material/Drawer';
 
 function SideBar() {
-  const [state, setState] = useState({ Marketing: true });
+  const [state, setState] = useState<{
+    Marketing?: boolean;
+    Advertising?: boolean;
+  }>({ Marketing: true, Advertising: false });
 
-  const handleClick = (item) => {
-    setState({ [item]: !state[item] });
+  const handleClick = (item: string) => {
+    setState({ [item]: !state[item as keyof typeof state] });
   };
 
-  const menuItems = {
+  type MenuItem = {
+    name: string;
+    url: string;
+    icon: JSX.Element;
+    children?: MenuItem[];
+    bold?: boolean;
+  };
+
+  const menuItems: { data: MenuItem[] } = {
     data: [
       {
         name: 'Dashboard',
@@ -42,22 +52,23 @@ function SideBar() {
       },
       {
         name: 'Marketing',
+        url: '/marketing',
         icon: <Megaphone className="megaphoneIcon" />,
         children: [
           {
             name: 'Create pages',
             url: '/create-pages',
-            icon: <BroadActivityFeed />,
+            icon: <BroadActivityFeed className="broadActivityFeedIcon" />,
           },
           {
             name: 'Edit links/pages',
             url: '/edit-links-pages',
-            icon: <LinkIcon />,
+            icon: <LinkIcon className="linkIcon" />,
           },
           {
             name: 'Email capture',
             url: '/email-capture',
-            icon: <Mail />,
+            icon: <Mail className="megaphoneIcon" />,
           },
           {
             name: 'Bulk uploader',
@@ -67,18 +78,19 @@ function SideBar() {
           {
             name: 'Custom domains',
             url: '/custom-domains',
-            icon: <DesktopKeyboard />,
+            icon: <DesktopKeyboard className="megaphoneIcon" />,
             bold: true,
           },
           {
             name: 'Embeddable widgets',
             url: '/embeddable-widgets',
-            icon: <DesktopFlow />,
+            icon: <DesktopFlow className="megaphoneIcon" />,
           },
         ],
       },
       {
         name: 'Advertising',
+        url: '/advertising',
         icon: <MyLocation className="advertisingIcon" />,
         children: [
           {
@@ -95,6 +107,7 @@ function SideBar() {
       },
       {
         name: 'Audiences',
+        url: '/audiences',
         icon: <GlobePerson />,
         children: [
           {
@@ -112,7 +125,7 @@ function SideBar() {
     ],
   };
 
-  const serviceMenuItems = {
+  const serviceMenuItems: { data: MenuItem[] } = {
     data: [
       {
         name: 'Account settings',
@@ -137,16 +150,16 @@ function SideBar() {
     ],
   };
 
-  const handler = (children) => {
+  const handler = (children: MenuItem[]) => {
     return children.map((subOption) => {
-      if (!subOption.children) {
+      if (!subOption?.children) {
         return (
           <div key={subOption.name}>
             <ListItemButton
               key={subOption.name}
-              className={`${state[subOption.name] && 'primary'} ${
-                subOption.bold && 'bold'
-              }`}
+              className={`${
+                state[subOption.name as keyof typeof state] && 'primary'
+              } ${subOption.bold && 'bold'}`}
             >
               {subOption.icon}
               <Link to={subOption.url}>
@@ -160,19 +173,23 @@ function SideBar() {
         <div key={subOption.name}>
           <ListItemButton
             onClick={() => handleClick(subOption.name)}
-            className={`${state[subOption.name] && 'primary'} ${
-              subOption.bold && 'bold'
-            }`}
+            className={`${
+              state[subOption.name as keyof typeof state] && 'primary'
+            } ${subOption.bold && 'bold'}`}
           >
             {subOption.icon}
             <ListItemText inset primary={subOption.name} />
-            {state[subOption.name] ? (
+            {state[subOption.name as keyof typeof state] ? (
               <Chevron className="chevron down" />
             ) : (
               <Chevron className="chevron" />
             )}
           </ListItemButton>
-          <Collapse in={state[subOption.name]} timeout="auto" unmountOnExit>
+          <Collapse
+            in={state[subOption.name as keyof typeof state]}
+            timeout="auto"
+            unmountOnExit
+          >
             {handler(subOption.children)}
           </Collapse>
         </div>
