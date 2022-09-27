@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 12px 12px 12px 24px;
+  padding: 10px 12px 12px 24px;
   gap: 16px;
   background: #ffffff;
   border: 1px solid #c2d9e7;
@@ -26,6 +26,7 @@ button {
   align-items: center;
   padding: 0;
   gap: 8px;
+  margin-right: 11px;
 
   svg {
     fill: #3577cb;
@@ -91,7 +92,7 @@ ul.options li[aria-selected='true'] {
   display: flex;
   align-items: center;
   padding: 0;
-  gap: 12px;
+  gap: 10px;
   flex-grow: 1;
   position: relative;
 }

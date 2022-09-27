@@ -5,6 +5,11 @@
   cursor: pointer;
 }
 
+.domainsMainBlock {
+  width: 100%;
+  gap: 17px;
+}
+
 .createDomainBtn {
   width: 233px;
   height: 32px;
@@ -19,6 +24,8 @@
   text-transform: uppercase;
   color: #ffffff;
   margin: 0;
+  gap: 11px;
+  margin-top: -6px;
 
   &:hover {
     background-color: #e7286e;
@@ -36,13 +43,16 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 4px;
+  margin-bottom: 28px;
 }
 
 li {
   display: inline;
   color: #3577cb;
   margin-right: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .domainsBottomBlockContainer {

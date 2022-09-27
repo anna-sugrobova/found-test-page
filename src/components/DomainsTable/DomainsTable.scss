@@ -1,8 +1,7 @@
 .tableStyles {
   width: 100%;
   text-align: left;
-  // border-spacing: 22.5px 20px;
-  // border-collapse: separate;
+  margin-bottom: 29px;
 }
 
 .primaryHeaderName {
@@ -13,8 +12,54 @@
   font-size: 14px;
 
   tr {
+    &:nth-child(1) {
+      td {
+        padding: 18.3px 0px 0px 0px;
+      }
+    }
+    &:nth-child(2) {
+      td {
+        padding: 26.1px 0px 0px 0px;
+      }
+    }
+    &:nth-child(3) {
+      td {
+        padding: 25.1px 0px 0px 0px;
+      }
+    }
+    &:nth-child(4) {
+      td {
+        padding: 24.3px 0px 0px 0px;
+      }
+    }
+    &:nth-child(5) {
+      td {
+        padding: 25.3px 0px 0px 0px;
+      }
+    }
     td {
-      padding: 6.3px 0px;
+      &:nth-child(1) {
+        width: 16.4%;
+      }
+      &:nth-child(2) {
+        width: 27.1%;
+      }
+      &:nth-child(3) {
+        width: 19.9%;
+      }
+      &:nth-child(4) {
+        width: 12.8%;
+        svg {
+          position: absolute;
+          top: 13px;
+        }
+      }
+      &:nth-child(5) {
+        width: 17%;
+      }
+      &:nth-child(6) {
+        width: 16%;
+      }
     }
   }
 }
@@ -40,8 +85,3 @@
   margin-left: 10px;
   fill: #3577cb;
 }
-
-// .checkboxChecked,
-// .checkbox {
-//   margin-bottom: 15px;
-// }

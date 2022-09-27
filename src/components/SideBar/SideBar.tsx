@@ -38,11 +38,11 @@ function SideBar() {
       {
         name: 'Dashboard',
         url: '/dashboard',
-        icon: <Home />,
+        icon: <Home className="dashboardIcon" />,
       },
       {
         name: 'Marketing',
-        icon: <Megaphone />,
+        icon: <Megaphone className="megaphoneIcon" />,
         children: [
           {
             name: 'Create pages',
@@ -62,7 +62,7 @@ function SideBar() {
           {
             name: 'Bulk uploader',
             url: '/bulk-uploader',
-            icon: <DatabaseArrowUp />,
+            icon: <DatabaseArrowUp className="databaseArrowUpIcon" />,
           },
           {
             name: 'Custom domains',
@@ -79,7 +79,7 @@ function SideBar() {
       },
       {
         name: 'Advertising',
-        icon: <MyLocation />,
+        icon: <MyLocation className="advertisingIcon" />,
         children: [
           {
             name: 'Advertising 1',

@@ -2,7 +2,7 @@ import './Search.scss';
 import { KeyboardEvent, useState } from 'react';
 import { ReactComponent as Chevron } from '../../assets/Chevron.svg';
 
-function Search({}) {
+function Search() {
   const [isOptionsOpen, setIsOptionsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(0);
 

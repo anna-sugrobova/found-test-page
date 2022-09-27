@@ -2,6 +2,10 @@
   .info {
     justify-content: space-between;
     flex-direction: column;
+    gap: 60px;
+    min-width: 288px;
+    align-self: stretch;
+    padding-top: 23px;
 
     .heading {
       white-space: nowrap;
@@ -16,7 +20,7 @@
       display: flex;
       align-items: flex-start;
       padding: 0;
-      gap: 8px;
+      gap: 6px;
 
       .icon {
         display: flex;

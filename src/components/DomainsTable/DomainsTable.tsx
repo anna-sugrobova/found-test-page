@@ -21,9 +21,9 @@ function DomainsTable() {
         </tr>
       </thead>
       <tbody className="mainTableContent">
-        <tr className="firstColumn">
-          <td>Amended Taxretum</td>
-          <td>www.amendedtaxreturn.com</td>
+        <tr>
+          <td className="firstColumn">Amended Taxretum</td>
+          <td className="secondColumn">www.amendedtaxreturn.com</td>
           <td>Submitted</td>
           <td>
             <CheckboxChecked className="checkboxChecked" />
@@ -34,9 +34,10 @@ function DomainsTable() {
             <Chevron className="chevronIcon" />
           </td>
         </tr>
+
         <tr>
-          <td>Changee</td>
-          <td>www.thischange.com</td>
+          <td className="firstColumn">Changee</td>
+          <td className="secondColumn">www.thischange.com</td>
           <td>Failed confirmation</td>
           <td>
             <Checkbox className="checkbox" />
@@ -48,8 +49,8 @@ function DomainsTable() {
           </td>
         </tr>
         <tr>
-          <td>Found root</td>
-          <td>lnk.notarealdomain.com</td>
+          <td className="firstColumn">Found root</td>
+          <td className="secondColumn">lnk.notarealdomain.com</td>
           <td>Failed confirmation</td>
           <td>
             <Checkbox className="checkbox" />
@@ -60,6 +61,7 @@ function DomainsTable() {
             <Chevron className="chevronIcon" />
           </td>
         </tr>
+
         <tr>
           <td>Amended Taxretum</td>
           <td>link.ft2.sod</td>
@@ -73,6 +75,7 @@ function DomainsTable() {
             <Chevron className="chevronIcon" />
           </td>
         </tr>
+
         <tr>
           <td>Changee</td>
           <td>www.amendedtaxreturn.com</td>
