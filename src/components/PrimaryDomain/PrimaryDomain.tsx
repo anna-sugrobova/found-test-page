@@ -8,15 +8,15 @@ import './PrimaryDomain.scss';
 
 function PrimaryDomain() {
   return (
-    <div className="primary-domain">
+    <div className="primaryDomain">
       <InfoBlock>
         <div className="heading">
           <p className="subtitle">Primary domain</p>
           <h2>Amended Taxretum</h2>
-          <a href="amendedtaxreturn.com">amendedtaxreturn.com</a>
+          <a href="https://amendedtaxreturn.com">amendedtaxreturn.com</a>
         </div>
         <div className="properties">
-          <span className="status-title">Status</span>
+          <span className="statusTitle">Status</span>
           <p>Submitted</p>
         </div>
         <div className="icons">

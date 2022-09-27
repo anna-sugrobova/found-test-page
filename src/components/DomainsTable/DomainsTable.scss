@@ -1,4 +1,4 @@
-.tableStyles {
+.domainsTable {
   width: 100%;
   text-align: left;
   margin-bottom: 29px;
@@ -14,27 +14,27 @@
   tr {
     &:nth-child(1) {
       td {
-        padding: 18.3px 0px 0px 0px;
+        padding: 18.3px 0 0 0;
       }
     }
     &:nth-child(2) {
       td {
-        padding: 26.1px 0px 0px 0px;
+        padding: 26.1px 0 0 0;
       }
     }
     &:nth-child(3) {
       td {
-        padding: 25.1px 0px 0px 0px;
+        padding: 25.1px 0 0 0;
       }
     }
     &:nth-child(4) {
       td {
-        padding: 24.3px 0px 0px 0px;
+        padding: 24.3px 0 0 0;
       }
     }
     &:nth-child(5) {
       td {
-        padding: 25.3px 0px 0px 0px;
+        padding: 25.3px 0 0 0;
       }
     }
     td {

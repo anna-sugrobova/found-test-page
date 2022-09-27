@@ -9,7 +9,7 @@ function UserManual() {
         <p>
           In your DNS settings, please point your CNAME entry of your domain
           with www. (example, www.mydomain.com) to the following host:{' '}
-          <a href="found.ee">found.ee</a>
+          <a href="https://found.ee">found.ee</a>
         </p>
         <p>
           If you prefer a subdomain, you can create a link.mydomain.com instead
@@ -17,10 +17,11 @@ function UserManual() {
         </p>
         <p>
           Sounds complicated? We have prepared{' '}
-          <a href="google.com">instructions for you here</a>. Or take a look at
-          some of the most popular domain registrars:{' '}
-          <a href="godaddy.com">GoDaddy</a>, <a href="domain.com">Domain.com</a>
-          , <a href="namecheap.com">Namecheap</a>.
+          <a href="https://google.com">instructions for you here</a>. Or take a
+          look at some of the most popular domain registrars:{' '}
+          <a href="https://godaddy.com">GoDaddy</a>,{' '}
+          <a href="https://domain.com">Domain.com</a>,{' '}
+          <a href="https://namecheap.com">Namecheap</a>.
         </p>
         <p>
           It may take up to 48 hours for the changes to take effect based on

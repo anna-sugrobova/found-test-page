@@ -8,29 +8,29 @@ import './CustomDomains.scss';
 function CustomDomains() {
   return (
     <InfoBlock>
-      <div className="domainsMainBlock">
-        <div className="domainsBlockHeader">
-          <h3 className="allDomainsTitle">All custom domains</h3>
-          <button className="createDomainBtn">
+      <div className="customDomains">
+        <div className="customDomainsHeader">
+          <h3 className="headerTitle">All custom domains</h3>
+          <button className="customDomainsButton">
             <AddCircle className="addCircleIcon" />
             Create custom domain
           </button>
         </div>
         <DomainsTable />
-        <div className="domainsBottomBlockContainer">
+        <div className="bottom">
           <p className="viewDomains">View all custom domains</p>
-          <div className="domainNumbersList">
+          <div className="pages">
             <TwoChevrons />
-            <ChevronInContainer className="leftChevronSvg" />
-            <ul className="domainNumbers">
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-              <li>5</li>
+            <ChevronInContainer className="leftChevron" />
+            <ul className="pagesList">
+              <li className="listItem">1</li>
+              <li className="listItem">2</li>
+              <li className="listItem">3</li>
+              <li className="listItem">4</li>
+              <li className="listItem">5</li>
             </ul>
-            <ChevronInContainer className="rightChevronSvg" />
-            <TwoChevrons className="twoChevronsSvg" />
+            <ChevronInContainer className="rightChevron" />
+            <TwoChevrons className="rightChevrons" />
           </div>
         </div>
       </div>

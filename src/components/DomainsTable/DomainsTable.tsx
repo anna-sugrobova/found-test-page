@@ -6,7 +6,7 @@ import './DomainsTable.scss';
 
 function DomainsTable() {
   return (
-    <table className="tableStyles">
+    <table className="domainsTable">
       <thead className="tableHeaderStyles">
         <tr>
           <th>Name</th>

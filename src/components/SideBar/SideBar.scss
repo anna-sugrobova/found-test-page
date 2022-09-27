@@ -1,4 +1,4 @@
-.side-bar {
+.sideBar {
   height: 100%;
   width: 256px;
   position: fixed;
@@ -47,10 +47,10 @@
     }
   }
 
-  .drawer-container {
+  .drawerContainer {
     width: 100%;
 
-    &.bottom {
+    .drawerContainerBottom {
       margin-top: auto;
     }
   }
@@ -64,7 +64,7 @@
     background: transparent;
     border: none;
     padding: 0;
-    font-family: 'Nunito', serif;
+    font-family: 'Nunito', sans-serif;
     font-style: normal;
 
     .MuiList-root {
@@ -89,6 +89,7 @@
         display: flex;
         align-items: center;
         gap: 13px;
+        cursor: pointer;
 
         svg {
           margin-left: 3px;
@@ -107,6 +108,10 @@
           .MuiTypography-root {
             color: #3577cb;
           }
+
+          svg {
+            fill: #3577cb;
+          }
         }
 
         a {
@@ -122,7 +127,7 @@
         }
 
         .MuiTypography-root {
-          font-family: 'Nunito', serif;
+          font-family: 'Nunito', sans-serif;
           text-decoration: none;
           color: #000000;
           font-weight: 400;
@@ -157,10 +162,7 @@
   }
 }
 
-.dashboardIcon {
-  margin-left: 3px;
-}
-
+.dashboardIcon,
 .megaphoneIcon {
   margin-left: 3px;
 }

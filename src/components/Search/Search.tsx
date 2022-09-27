@@ -83,6 +83,7 @@ function Search() {
               aria-selected={selectedOption === index}
               tabIndex={0}
               onKeyDown={handleKeyDown(index)}
+              key={option}
               onClick={() => {
                 setSelectedThenCloseDropdown(index);
               }}

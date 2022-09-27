@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { ReactComponent as Chevron } from '../../assets/Chevron.svg';
 import { ReactComponent as Home } from '../../assets/Home.svg';
 import { ReactComponent as Megaphone } from '../../assets/Megaphone.svg';
-import { ReactComponent as BoroadActivityFeed } from '../../assets/BoroadActivityFeed.svg';
+import { ReactComponent as BroadActivityFeed } from '../../assets/BoroadActivityFeed.svg';
 import { ReactComponent as LinkIcon } from '../../assets/Link.svg';
 
 import { ReactComponent as Mail } from '../../assets/Mail.svg';
@@ -21,7 +21,7 @@ import { ReactComponent as Logout } from '../../assets/Logout.svg';
 
 import List from '@mui/material/List';
 import { Link } from 'react-router-dom';
-import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import Collapse from '@mui/material/Collapse';
 import Drawer from '@mui/material/Drawer';
@@ -47,7 +47,7 @@ function SideBar() {
           {
             name: 'Create pages',
             url: '/create-pages',
-            icon: <BoroadActivityFeed />,
+            icon: <BroadActivityFeed />,
           },
           {
             name: 'Edit links/pages',
@@ -142,8 +142,7 @@ function SideBar() {
       if (!subOption.children) {
         return (
           <div key={subOption.name}>
-            <ListItem
-              button
+            <ListItemButton
               key={subOption.name}
               className={`${state[subOption.name] && 'primary'} ${
                 subOption.bold && 'bold'
@@ -153,14 +152,13 @@ function SideBar() {
               <Link to={subOption.url}>
                 <ListItemText inset primary={subOption.name} />
               </Link>
-            </ListItem>
+            </ListItemButton>
           </div>
         );
       }
       return (
         <div key={subOption.name}>
-          <ListItem
-            button
+          <ListItemButton
             onClick={() => handleClick(subOption.name)}
             className={`${state[subOption.name] && 'primary'} ${
               subOption.bold && 'bold'
@@ -173,7 +171,7 @@ function SideBar() {
             ) : (
               <Chevron className="chevron" />
             )}
-          </ListItem>
+          </ListItemButton>
           <Collapse in={state[subOption.name]} timeout="auto" unmountOnExit>
             {handler(subOption.children)}
           </Collapse>
@@ -183,14 +181,14 @@ function SideBar() {
   };
 
   return (
-    <div className="side-bar">
+    <div className="sideBar">
       <img className="logo" src={logo} alt="Site logo" />
       <button className="launch">
         quick launch
         <Chevron />
       </button>
 
-      <div className="drawer-container">
+      <div className="drawerContainer">
         <Drawer variant="persistent" open hideBackdrop>
           <div>
             <List>{handler(menuItems.data)}</List>
@@ -198,7 +196,7 @@ function SideBar() {
         </Drawer>
       </div>
 
-      <div className="drawer-container bottom">
+      <div className="drawerContainerBottom">
         <Drawer variant="persistent" open hideBackdrop>
           <div>
             <List>{handler(serviceMenuItems.data)}</List>

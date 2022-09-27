@@ -10,20 +10,22 @@ import './index.css';
 function App() {
   return (
     <div className="App">
-      <div>
+      <nav>
         <SideBar />
-      </div>
+      </nav>
       <div className="mainBlock">
         <header>
           <Header />
         </header>
         <Search />
-        <p className="domains-subtitle">Custom domains management</p>
-        <div className="cards">
-          <PrimaryDomain />
-          <UserManual />
-        </div>
-        <CustomDomains />
+        <main>
+          <h2 className="domains-subtitle">Custom domains management</h2>
+          <div className="cards">
+            <PrimaryDomain />
+            <UserManual />
+          </div>
+          <CustomDomains />
+        </main>
       </div>
     </div>
   );
