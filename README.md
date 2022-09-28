@@ -7,8 +7,8 @@ The test requires to convert the Figma design into a pixel perfect responsive de
 
 ### Stack
 
-— HTML
-— CSS
-— SCSS
-— JavaScript
-— TypeScript
+- HTML
+- CSS
+- SCSS
+- JavaScript
+- TypeScript
