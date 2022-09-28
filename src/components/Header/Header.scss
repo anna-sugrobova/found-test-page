@@ -133,6 +133,9 @@
 
       .video {
         margin-right: 0;
+        &:first-child {
+          margin-right: 0;
+        }
       }
       .intro {
         margin-right: 0;

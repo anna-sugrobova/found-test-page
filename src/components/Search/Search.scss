@@ -9,6 +9,11 @@
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
   border-radius: 45px;
   margin-bottom: 24px;
+
+  @media (max-width: 480px) {
+    padding: 6px 6px 6px 12px;
+    gap: 5px;
+  }
 }
 
 button {
@@ -105,7 +110,7 @@ ul.options li[aria-selected='true'] {
   }
 
   @media (max-width: 480px) {
-    gap: 5px;
+    gap: 0;
   }
 }
 
@@ -135,5 +140,11 @@ button.search {
 
   &:hover {
     background-color: #e7286e;
+  }
+
+  @media (max-width: 480px) {
+    letter-spacing: normal;
+    width: auto;
+    padding: 0 10px;
   }
 }

@@ -171,6 +171,9 @@
 
 .dashboardIcon {
   margin-left: 3px;
+  & + a {
+    margin-left: 1.9px;
+  }
 }
 
 .megaphoneIcon {
@@ -184,4 +187,16 @@
 .advertisingIcon {
   margin-left: 4px;
   margin-top: 3px;
+}
+
+.myLocationIcon {
+  margin-left: 1.6px;
+  width: 23px;
+  margin-top: 1px;
+}
+
+.globePersonIcon {
+  width: 23px;
+  margin-top: 3px;
+  margin-left: 2.2px;
 }

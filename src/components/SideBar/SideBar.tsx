@@ -68,7 +68,7 @@ function SideBar() {
           {
             name: 'Email capture',
             url: '/email-capture',
-            icon: <Mail className="megaphoneIcon" />,
+            icon: <Mail className="mailIcon" />,
           },
           {
             name: 'Bulk uploader',
@@ -78,20 +78,20 @@ function SideBar() {
           {
             name: 'Custom domains',
             url: '/custom-domains',
-            icon: <DesktopKeyboard className="megaphoneIcon" />,
+            icon: <DesktopKeyboard className="desktopKeyboardIcon" />,
             bold: true,
           },
           {
             name: 'Embeddable widgets',
             url: '/embeddable-widgets',
-            icon: <DesktopFlow className="megaphoneIcon" />,
+            icon: <DesktopFlow className="desktopFlowIcon" />,
           },
         ],
       },
       {
         name: 'Advertising',
         url: '/advertising',
-        icon: <MyLocation className="advertisingIcon" />,
+        icon: <MyLocation className="myLocationIcon" />,
         children: [
           {
             name: 'Advertising 1',
@@ -108,7 +108,7 @@ function SideBar() {
       {
         name: 'Audiences',
         url: '/audiences',
-        icon: <GlobePerson />,
+        icon: <GlobePerson className="globePersonIcon" />,
         children: [
           {
             name: 'Audiences 1',
