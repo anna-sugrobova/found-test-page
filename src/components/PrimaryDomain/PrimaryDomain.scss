@@ -1,19 +1,19 @@
 .primaryDomain {
   .info {
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 60px;
     min-width: 288px;
+    flex-direction: column;
     align-self: stretch;
+    justify-content: space-between;
     padding-top: 23px;
+    gap: 60px;
 
     .heading {
       white-space: nowrap;
     }
 
     .subtitle {
-      font-weight: 600;
       color: #808080;
+      font-weight: 600;
     }
 
     .icons {
@@ -24,14 +24,14 @@
 
       .icon {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
         width: 32px;
         height: 32px;
-        background: #ffffff;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
         border: 1px solid #e0e0e0;
         border-radius: 50px;
+        background: #fff;
         cursor: pointer;
 
         &:hover {
@@ -58,10 +58,10 @@
 }
 
 .statusTitle {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
   color: #808080;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 15px;
+  text-transform: uppercase;
 }

@@ -1,27 +1,29 @@
 .mainBlock {
-  margin-left: 256px;
   padding-right: 32px;
   padding-left: 33px;
+  margin-left: 256px;
+
   @media (max-width: 1024px) {
     padding-left: 0;
   }
 
   @media (max-width: 767px) {
-    margin-left: 0;
     padding-left: 32px;
+    margin-left: 0;
   }
 
   @media (max-width: 480px) {
-    padding-left: 16px;
     padding-right: 16px;
+    padding-left: 16px;
   }
 }
 
 .domainsSubtitle {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
   margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+
   @media (max-width: 768px) {
     text-align: center;
   }
@@ -31,14 +33,14 @@
   display: flex;
   align-items: flex-start;
   padding: 0;
-  gap: 16px;
   margin-bottom: 16px;
+  gap: 16px;
 
   .info {
-    font-weight: 400;
+    color: #000;
     font-size: 14px;
+    font-weight: 400;
     line-height: 19px;
-    color: #000000;
   }
 
   @media (max-width: 1024px) {
@@ -51,8 +53,8 @@
 
   @media (max-width: 480px) {
     .info {
-      text-align: center;
       align-items: center;
+      text-align: center;
     }
   }
 }
@@ -69,6 +71,7 @@
   .appSideBar {
     display: none;
   }
+
   .burger {
     display: block;
   }
@@ -77,11 +80,11 @@
 /* Individual item */
 .bm-item {
   display: inline-block;
+  margin-bottom: 10px;
+  color: #d1d1d1;
 
   /* Our sidebar item styling */
   text-decoration: none;
-  margin-bottom: 10px;
-  color: #d1d1d1;
   transition: color 0.2s;
 }
 
@@ -95,21 +98,21 @@
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: absolute;
+  top: 36px;
+  left: 36px;
   width: 26px;
   height: 20px;
-  left: 36px;
-  top: 36px;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #000000;
+  background: #000;
 }
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  height: 24px;
   width: 24px;
+  height: 24px;
 }
 
 /* Color/shape of close button cross */
@@ -119,8 +122,8 @@
 
 /* General sidebar styles */
 .bm-menu {
-  background: #f2f7fa;
   padding: 2.5em 1.5em 0;
+  background: #f2f7fa;
   font-size: 1.15em;
 }
 
@@ -136,5 +139,5 @@
 
 /* Styling of overlay */
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgb(0 0 0 / 30%);
 }

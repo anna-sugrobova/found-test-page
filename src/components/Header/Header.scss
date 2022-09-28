@@ -1,28 +1,87 @@
 .header {
   display: flex;
+  justify-content: space-between;
   padding-top: 23.5px;
   padding-bottom: 19px;
-  justify-content: space-between;
 
   .headerInfo {
     display: flex;
 
-    .video,
-    .intro {
+    .user {
       display: flex;
-      color: #3577cb;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 19px;
-      align-items: center;
-      cursor: pointer;
+      margin-right: 82px;
+      margin-left: 47px;
 
-      &:first-child {
-        margin-right: 38px;
+      @media (max-width: 1024px) {
+        margin-right: 0;
+        margin-left: 10px;
       }
 
       svg {
+        align-self: center;
+      }
+
+      .userInfo {
+        display: flex;
+        flex-direction: column;
+        margin-left: 12px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 19px;
+
+        .userInfoPro {
+          color: #d84a7e;
+          cursor: pointer;
+
+          &:hover {
+            color: #e7286e;
+          }
+        }
+      }
+    }
+
+    .chevron,
+    .intro,
+    .video {
+      svg {
         fill: #3577cb;
+      }
+    }
+
+    .chevron {
+      display: flex;
+      width: 32px;
+      height: 32px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      border: 1px solid #e0e0e0;
+      border-radius: 30px;
+      background: #fff;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f2f2f5;
+
+        svg {
+          fill: #164a89;
+        }
+      }
+    }
+
+    .video,
+    .intro {
+      display: flex;
+      align-items: center;
+      color: #3577cb;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 19px;
+
+      &:first-child {
+        margin-right: 38px;
       }
 
       span {
@@ -37,73 +96,14 @@
         }
       }
     }
-
-    .user {
-      display: flex;
-      margin-left: 47px;
-      margin-right: 82px;
-
-      @media (max-width: 1024px) {
-        margin-right: 0;
-        margin-left: 10px;
-      }
-
-      svg {
-        align-self: center;
-      }
-
-      .userInfo {
-        margin-left: 12px;
-        display: flex;
-        flex-direction: column;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 19px;
-
-        .userInfoPro {
-          color: #d84a7e;
-          cursor: pointer;
-
-          &:hover {
-            color: #e7286e;
-          }
-        }
-      }
-    }
-
-    .chevron {
-      cursor: pointer;
-      width: 32px;
-      height: 32px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 0;
-      background: #ffffff;
-      border: 1px solid #e0e0e0;
-      border-radius: 30px;
-
-      svg {
-        fill: #3577cb;
-      }
-
-      &:hover {
-        background-color: #f2f2f5;
-
-        svg {
-          fill: #164a89;
-        }
-      }
-    }
   }
 }
 
 .title {
-  font-weight: 400;
+  color: #000;
   font-size: 24px;
+  font-weight: 400;
   line-height: 33px;
-  color: #000000;
 }
 
 @media (max-width: 768px) {
@@ -126,6 +126,7 @@
     .title {
       margin-bottom: 10px;
     }
+
     .headerInfo {
       flex-direction: column;
       align-items: center;
@@ -133,13 +134,16 @@
 
       .video {
         margin-right: 0;
+
         &:first-child {
           margin-right: 0;
         }
       }
+
       .intro {
         margin-right: 0;
       }
+
       .user {
         margin-left: 0;
       }

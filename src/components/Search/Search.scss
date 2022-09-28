@@ -3,12 +3,12 @@
   flex-direction: row;
   align-items: center;
   padding: 11px 12px 12px 24px;
-  gap: 16px;
-  background: #ffffff;
   border: 1px solid #c2d9e7;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
   border-radius: 45px;
   margin-bottom: 24px;
+  background: #fff;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 5%);
+  gap: 16px;
 
   @media (max-width: 480px) {
     padding: 6px 6px 6px 12px;
@@ -17,21 +17,22 @@
 }
 
 button {
-  border: 0;
-  border-radius: 4px;
   position: relative;
-  text-align: left;
-  background: transparent;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-  color: #3577cb;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0;
-  gap: 8px;
+  border: 0;
+  border-radius: 4px;
   margin-right: 11px;
+  background: transparent;
+  color: #3577cb;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  gap: 8px;
+  line-height: 19px;
+  text-align: left;
 
   svg {
     fill: #3577cb;
@@ -50,10 +51,6 @@ button {
   }
 }
 
-button:hover {
-  cursor: pointer;
-}
-
 button.expanded svg {
   transform: rotateX(180deg);
 }
@@ -63,13 +60,13 @@ ul {
 }
 
 ul.options {
+  position: absolute;
+  top: 100%;
   display: none;
-  list-style: none;
   padding: 4px 0;
   margin-top: -4px;
-  position: absolute;
   background: white;
-  top: 100%;
+  list-style: none;
 }
 
 ul.show {
@@ -84,26 +81,26 @@ ul.options li:active,
 ul.options li:focus,
 ul.options li:hover,
 ul.options li[aria-selected='true'] {
+  border-radius: 28px;
   background: #f2f7fa;
   cursor: pointer;
-  border-radius: 28px;
 }
 
 .divider {
-  transform: rotate(90deg);
-  font-weight: 400;
   font-size: 14px;
-  line-height: 19px;
+  font-weight: 400;
   letter-spacing: 0.2em;
+  line-height: 19px;
+  transform: rotate(90deg);
 }
 
 .input {
+  position: relative;
   display: flex;
+  flex-grow: 1;
   align-items: center;
   padding: 0;
   gap: 10px;
-  flex-grow: 1;
-  position: relative;
 
   @media (max-width: 768px) {
     text-align: center;
@@ -116,35 +113,35 @@ ul.options li[aria-selected='true'] {
 
 input {
   all: unset;
-  border: none;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: #000000;
   flex-grow: 1;
+  border: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
 }
 
 button.search {
   width: 104px;
   height: 32px;
   padding: 0 24px;
-  background: #d84a7e;
   border-radius: 30px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #ffffff;
   margin: 0;
+  background: #d84a7e;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 16px;
+  text-transform: uppercase;
 
   &:hover {
     background-color: #e7286e;
   }
 
   @media (max-width: 480px) {
-    letter-spacing: normal;
     width: auto;
     padding: 0 10px;
+    letter-spacing: normal;
   }
 }
