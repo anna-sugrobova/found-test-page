@@ -20,7 +20,7 @@ The test requires to convert the Figma design https://www.figma.com/file/marMysj
 ```js
 npm install
 // or
-yarn install
+yarn
 ```
 * start local server on localhost:3000
 ```
