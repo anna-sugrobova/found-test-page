@@ -12,3 +12,17 @@ The test requires to convert the Figma design https://www.figma.com/file/marMysj
 - SCSS
 - JavaScript
 - TypeScript
+
+### How to run locally
+
+* install dependencies 
+
+```js
+npm install
+// or
+yarn install
+```
+* start local server on localhost:3000
+```
+npm start
+```
